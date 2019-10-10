@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = eng>
+    <head>
+        <title>PRS - Vendor List</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="JS/vendor.list.component.js"></script>
+        <script src="JS/vendor.service.js"></script>
+    </head>
+    <body>
+        <table style="width:100%;">
+            <tr>
+                <th>ID</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+            <tbody id="tbody"></tbody>
+        </table>
+        <button onclick="getVendors();">Refresh</button>
+        
+    </body>
+</html>
