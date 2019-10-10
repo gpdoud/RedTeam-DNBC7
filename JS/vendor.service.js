@@ -8,7 +8,7 @@ VendorService.list = () => {
 VendorService.get = (id) => {
     return $.getJSON(`${url}/${id}`);
 }
-VendorService.insert = (vendor) => {
+VendorService.create = (vendor) => {
     return $.ajax( {
         method:"POST",
         url: url,
@@ -18,7 +18,7 @@ VendorService.insert = (vendor) => {
         contentType:"application/json"
     });
 }
-VendorService.update = (vendor) => {
+VendorService.edit = (vendor) => {
     return $.ajax( {
         method:"PUT",
         url: `${url}/${vendor.id}`,
@@ -28,7 +28,7 @@ VendorService.update = (vendor) => {
         contentType:"application/json"
     });
 }
-VendorService.delete = (id) => {
+VendorService.remove = (id) => {
     return $.ajax( {
         method:"DELETE",
         url:`${url}/${vendor.id}`,
