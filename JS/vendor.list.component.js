@@ -11,7 +11,7 @@ const getVendors = () => {
 const refresh = (vendors) => {
     var tbodyCtrl= document.getElementById("tbody");
     tbodyCtrl.innerHTML = "";
-    var url = 
+    var dtURL = "file:///C:/repos/RedTeam-DNBC7/vendor.detail.component.html";
     for(var vendor of vendors) {
         var tr = "<tr>";
         tr += `<td>${vendor.id}</td>`
@@ -23,7 +23,7 @@ const refresh = (vendors) => {
         tr += `<td>${vendor.zip}</td>`
         tr += `<td>${vendor.phone}</td>`
         tr += `<td>${vendor.email}</td>`
-        tr += `<td><a href="${url}?id=${vendor.id}">Details </a><span>|</span><a href="https://www.amazon.com/"> Edit</a></td>`
+        tr += `<td><a href="${dtURL}?id=${vendor.id}">Details </a><span>|</span><a href="https://www.amazon.com/"> Edit</a></td>`
         tr += "</tr>";
         tbodyCtrl.innerHTML += tr;
     }
