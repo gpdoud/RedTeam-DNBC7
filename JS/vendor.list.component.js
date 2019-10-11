@@ -1,5 +1,5 @@
 const getVendors = () => {
-    UserService.list()
+    VendorService.list()
     .done( (res) => refresh(res) );
 
 
