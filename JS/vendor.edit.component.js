@@ -4,9 +4,10 @@ $().ready( () => {
         let id = $("#xid").val();
         get(id);
     });
+
     $("#btnSave").click( () => {
         let vendor = {
-            id : 0,
+            id : $("#pid").val(),
             code : $("#pcode").val(),
             name : $("#pname").val(),
             address : $("#paddress").val(),
