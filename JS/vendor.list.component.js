@@ -4,7 +4,7 @@ const getVendors = () => {
 
 
     //Can also be written as below, including the jqXHR
-    //let jqXHR = UserService.list()
+    //let jqXHR = VendorService.list()
     //jqXHR.done( (res) => refresh(res) );
 };
 
