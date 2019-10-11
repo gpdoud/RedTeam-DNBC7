@@ -1,7 +1,11 @@
+let urlParms = {};
+
 $().ready(() => {
-    $("button").click(() => {
-        getVendor();
-    });
+    urlParms = Utilities.parseUrlParameters(document.URL);
+    getVendor();
+    //$("button").click(() => {
+        //getVendor();
+    //});
 });
 
 const refresh = (vendor) => {
@@ -17,7 +21,7 @@ const refresh = (vendor) => {
 };
 
 const getVendor = () => {
-    let id = $("#xid").val();
+    let id = urlParms.id;
     VendorService.get(id)
     .done( (res) => {
         console.log("Vendor:", res);
