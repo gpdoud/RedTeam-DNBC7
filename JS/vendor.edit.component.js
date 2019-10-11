@@ -20,6 +20,7 @@ $().ready( () => {
         VendorService.edit(vendor)
             .done((res) => {
                 console.log("Edit rc:", res);
+                window.location= "file:///C:/repos/RedTeam-DNBC7/vendor.list.component.html";
             });
     });
 });
