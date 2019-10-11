@@ -17,7 +17,7 @@ $().ready( () => {
             email : $("#pemail").val(),
         }
         console.log("Vendor:", vendor);
-        VendorService.update(vendor)
+        VendorService.edit(vendor)
             .done((res) => {
                 console.log("Edit rc:", res);
             });
