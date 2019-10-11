@@ -1,9 +1,8 @@
-$().ready( () => {    
+let urlParms = {};
 
-    $("#btnGet").click( () => {
-        let id = $("#xid").val();
-        get(id);
-    });
+$().ready( () => {    
+    urlParms = Utilities.parseUrlParameters(document.URL);
+    get();
 
     $("#btnSave").click( () => {
         let vendor = {
@@ -24,8 +23,8 @@ $().ready( () => {
             });
     });
 });
-const get = (id) => {
-    VendorService.get(id)
+const get = () => {
+    VendorService.get(urlParms.id)
         .done( (vendor) => {
             $("#pid").val(vendor.id);
             $("#pcode").val(vendor.code);
