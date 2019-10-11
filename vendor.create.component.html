@@ -2,23 +2,39 @@
 <html lang="en">
 <head>
     <title>Vendor Create</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/vendor.service.js"></script>
     <script src="js/vendor.detail.component.js"></script>
     <script src="js/vendor.create.component.js"></script>
 </head>
-<body>
+<body style="background-color:darkslategray; font-family: sans-serif">
     <table>
-        <tr><td>Id:<input id="pid" type="text"></td></tr>
-        <tr><td>Code:<input id="pcode" type="text"></td></tr>
-        <tr><td>Name:<input id="pname" type="text"></td></tr>
-        <tr><td>Address:<input id="paddress" type="text"></td></tr>
-        <tr><td>City:<input id="pcity" type="text"></td></tr>
-        <tr><td>State:<input id="pstate" type="text"></td></tr>
-        <tr><td>Zip:<input id="pzip" type="text"></td></tr>
-        <tr><td>Phone:<input id="pphone" type="text"></td></tr>
-        <tr><td>Email:<input id="pemail" type="text"></td></tr>
+        <tr>
+            <td style="width: 30%">
+                <table style="color:whitesmoke">                 
+                    <tr><td>Id:</td><td><input id="pid" type="text"></td></tr>
+                    <tr><td>Code:</td><td><input id="pcode" type="text"></td></tr>
+                    <tr><td>Name:</td><td><input id="pname" type="text"></td></tr>
+                    <tr><td>Address:</td><td><input id="paddress" type="text"></td></tr>
+                    <tr><td>City:</td><td><input id="pcity" type="text"></td></tr>
+                    <tr><td>State:</td><td><input id="pstate" type="text"></td></tr>
+                    <tr><td>Zip:</td><td><input id="pzip" type="text"></td></tr>
+                    <tr><td>Phone:</td><td><input id="pphone" type="text"></td></tr>
+                    <tr><td>Email:</td><td><input id="pemail" type="text"></td></tr>
+                </table>
+            </td>
+            <td style="width: 60%; font-size: 800%">
+                <span style="color: yellow">✩</span>
+                <span style="color: lime">°</span>
+                <span style="color:blue">｡</span>
+                <span style="color:magenta">⋆</span>
+                <span style="color: burlywood">⸜</span>
+                <span style="color: rgb(212, 212, 192)">(ू˙꒳​˙ )</span>                  
+            </td>
+        </tr>
     </table>
-    <button id="btnSave">Save</button>
+    <button id="btnSave" style="background-color: rgb(4, 207, 4)" class="btn btn-success">Create!</button>
 </body>
+</div>
 </html>

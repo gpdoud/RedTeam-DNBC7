@@ -2,17 +2,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-            <title>Doc</title>
+            <title>PRS - Vendor Delete</title>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="js/vendor.service.js"></script>
             <script src="js/vendor.remove.component.js"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
 
     <body>
+    <div id="bodystyling">
         <div>
+            <h1>Vendor: Delete</h1>
             <label>Id:</label>
             <input id="xid" type="number" value="1">
-            <button id="btnGet">Get</button>
+            <button id="btnGet" type="button" class="btn btn-danger">Get</button>
         </div>
         
         <table>
@@ -26,6 +29,7 @@
             <tr><td>Phone</td><td> <input id="pphone" type="text"></td></tr>
             <tr><td>Email</td><td> <input id="pemail" type="text"></td></tr>
         </table>
-    <button id="btnRemove">Remove</button>
+    <button id="btnRemove" type="button" class="btn btn-danger">Danger</button>
+    </div>
     </body>
 </html>
