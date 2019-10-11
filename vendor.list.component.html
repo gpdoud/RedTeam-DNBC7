@@ -5,8 +5,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="JS/vendor.list.component.js"></script>
         <script src="JS/vendor.service.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
+        <div>
+            <h1>Vendors List</h1>
+        </div>
         <table style="width:100%;">
             <tr>
                 <th>ID</th>
@@ -19,9 +23,11 @@
                 <th>Phone</th>
                 <th>Email</th>
             </tr>
+            <br>
             <tbody id="tbody"></tbody>
         </table>
-        <button onclick="getVendors();">Refresh</button>
-        
+        <br>
+        <button onclick="getVendors();" type="button" class="btn btn-warning">Get Vendors</button>
+       
     </body>
 </html>
