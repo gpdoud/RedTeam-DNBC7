@@ -28,7 +28,7 @@ VendorService.edit = (vendor) => {
         contentType:"application/json"
     });
 }
-VendorService.remove = (id) => {
+VendorService.remove = (vendor) => {
     return $.ajax( {
         method:"DELETE",
         url:`${url}/${vendor.id}`,
