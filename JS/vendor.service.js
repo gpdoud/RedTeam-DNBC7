@@ -1,4 +1,4 @@
-const url = "http://localhost:50300/api/vendors";
+const url = "http://localhost:50288/api/vendors";
 
 let VendorService = {}
 

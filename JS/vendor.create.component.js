@@ -13,7 +13,7 @@ $().ready( () => {
             email : $("#pemail").val(),
         }
         console.log("Vendor:", vendor);
-        UserService.create(vendor)
+        VendorService.create(vendor)
             .done((res) => {
                 console.log("create rc:", res);
             });
